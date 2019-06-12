@@ -41,4 +41,8 @@ public class CEO implements IPower {
     public void fireEmployee(String employee) {
         System.out.println(employee + ", you're FIRED!");
     }
+
+    public void removeCEO() {
+        instance = null;
+    }
 }

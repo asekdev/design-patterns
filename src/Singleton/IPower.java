@@ -2,5 +2,5 @@ package Singleton;
 
 public interface IPower {
 
-    public void fireEmployee(String employee);
+    void fireEmployee(String employee);
 }

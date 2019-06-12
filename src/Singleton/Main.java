@@ -24,7 +24,9 @@ public class Main {
         //There can only be one CEO at a time.
 
         anotherCEO.fireEmployee("Jimbo");
+        anotherCEO.removeCEO();
 
+        System.out.println(anotherCEO.toString());
 
     }
 }
