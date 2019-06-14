@@ -15,7 +15,7 @@ public class Main {
 
         Phone android = builder.getPhone();
 
-        System.out.println(android.toString());
+        System.out.println(android);
 
     }
 }
