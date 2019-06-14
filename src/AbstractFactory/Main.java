@@ -5,13 +5,15 @@ public class Main {
     public static void main(String[] args) {
 
 
-        Vehicle car = VehicleFactory.getVehicleFactory(new CarFactory("100", "Car"));
+        Vehicle car = VehicleFactory.getVehicleFactory(new CarFactory("100", "Car", new Wheels("Yokohoma", "Offroading")));
 
         car.getSpeed();
 
-        Vehicle bike = VehicleFactory.getVehicleFactory(new MotorbikeFactory("100", "Car"));
+        Vehicle bike = VehicleFactory.getVehicleFactory(new MotorbikeFactory("100", "Car", new Wheels("Perelli", "Sports")));
 
         bike.getSpeed();
+        System.out.println(bike.getWheels().getBrand() + "tyres");
+        System.out.println("Car has " + car.getWheels().getType() + " wheels");
 
     }
 }

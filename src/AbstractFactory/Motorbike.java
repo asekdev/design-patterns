@@ -2,8 +2,8 @@ package AbstractFactory;
 
 public class Motorbike extends Vehicle {
 
-    public Motorbike(String type, String speed) {
-        super(type, speed);
+    public Motorbike(String type, String speed, Wheels wheels) {
+        super(type, speed, wheels);
     }
 
     @Override
