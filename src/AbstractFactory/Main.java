@@ -15,5 +15,18 @@ public class Main {
         System.out.println(bike.getWheels().getBrand() + "tyres");
         System.out.println("Car has " + car.getWheels().getType() + " wheels");
 
+        Vehicle v = null;
+
+        int numWheels = 2;
+
+        if(numWheels == 4) {
+            v = VehicleFactory.getVehicleFactory(new CarFactory("100", "Car", new Wheels("Yokohoma", "Offroading")));
+        } else {
+            v = VehicleFactory.getVehicleFactory(new MotorbikeFactory("100", "Car", new Wheels("Perelli", "Sports")));
+        }
+
+        System.out.println("Vechicle created!");
+        v.getType();
+
     }
 }
