@@ -25,7 +25,7 @@ public class Main {
             v = VehicleFactory.getVehicleFactory(new MotorbikeFactory("100", "Car", new Wheels("Perelli", "Sports")));
         }
 
-        System.out.println("Vechicle created!");
+        System.out.println("Vehicle created!");
         v.getType();
 
     }
