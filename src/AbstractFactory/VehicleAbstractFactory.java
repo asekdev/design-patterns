@@ -1,6 +1,6 @@
 package AbstractFactory;
 
-public interface   VehicleAbstractFactory {
+public interface VehicleAbstractFactory {
 
     Vehicle createVehicle();
 }
