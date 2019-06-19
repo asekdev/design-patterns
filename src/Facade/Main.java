@@ -6,5 +6,6 @@ public class Main {
         BankAccountFacade account = new BankAccountFacade(112233,1234);
 
         account.withdrawCash(100);
+        account.depositCash(2000);
     }
 }

@@ -59,7 +59,8 @@ public class BankAccountFacade {
 
             fundChecker.makeDeposit(cashToDeposit);
 
-            System.out.println("Transaction Complete\n");
+            System.out.println("Transaction Complete");
+            System.out.println("Cash balance: $" + this.fundChecker.getCashInAccount());
 
         } else {
 
