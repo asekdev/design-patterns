@@ -1,5 +1,8 @@
 package Proxy;
 
+import java.lang.reflect.Array;
+import java.util.*;
+
 public class Main {
 
     public static void main(String[] args) {
@@ -19,6 +22,5 @@ public class Main {
         //We do not have access to getters/setters. Only the methods from the interfaces.
         System.out.println("Money in ATM: $" + proxyATM.getCashInMachine());
         proxyATM.atmStatus();
-
     }
 }
